@@ -6,6 +6,7 @@ const endScore = localStorage.getItem("endScore");
 let scores = localStorage.getItem("scores");
 if (scores === "") scores = [];
 else scores = JSON.parse(scores);
+// Debug
 console.log(scores);
 const MAX_SCORES = 10;
 
