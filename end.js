@@ -4,10 +4,9 @@ const endScoreText = document.getElementById("end-score");
 const highScoreText = document.getElementById("high-score");
 const endScore = localStorage.getItem("endScore");
 let scores = localStorage.getItem("scores");
-if (scores === "") scores = [];
+if (scores == "" || scores == null || scores == undefined) scores = [];
 else scores = JSON.parse(scores);
-// Debug
-console.log(scores);
+//console.log(scores);
 const MAX_SCORES = 10;
 
 // Display score
